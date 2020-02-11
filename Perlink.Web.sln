@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Perlink.Web", "src\Perlink.Web\Perlink.Web.csproj", "{9DE7978B-1C40-4C46-8071-7809E8F8315C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BD21ECBB-E6B5-4FF3-A918-284F0295A0D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{B0735FB8-2C20-4504-BDAB-D74A06CA2778}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Readme", "Readme", "{A287C037-3C25-417B-8C2D-9F3B86F4F99C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{7303AEF4-4237-4234-945B-94217A68F0C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Perlink.Services", "src\Perlink.Services\Perlink.Services.csproj", "{D6DADD78-9C54-4F43-92BF-991138B163F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Perlink.Data", "src\Perlink.Data\Perlink.Data.csproj", "{134BA80B-AD0E-4F41-AD21-E7C44BF8ECB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DE7978B-1C40-4C46-8071-7809E8F8315C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE7978B-1C40-4C46-8071-7809E8F8315C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DE7978B-1C40-4C46-8071-7809E8F8315C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DE7978B-1C40-4C46-8071-7809E8F8315C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6DADD78-9C54-4F43-92BF-991138B163F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6DADD78-9C54-4F43-92BF-991138B163F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6DADD78-9C54-4F43-92BF-991138B163F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6DADD78-9C54-4F43-92BF-991138B163F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{134BA80B-AD0E-4F41-AD21-E7C44BF8ECB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{134BA80B-AD0E-4F41-AD21-E7C44BF8ECB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{134BA80B-AD0E-4F41-AD21-E7C44BF8ECB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{134BA80B-AD0E-4F41-AD21-E7C44BF8ECB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9DE7978B-1C40-4C46-8071-7809E8F8315C} = {BD21ECBB-E6B5-4FF3-A918-284F0295A0D7}
+		{D6DADD78-9C54-4F43-92BF-991138B163F2} = {BD21ECBB-E6B5-4FF3-A918-284F0295A0D7}
+		{134BA80B-AD0E-4F41-AD21-E7C44BF8ECB9} = {BD21ECBB-E6B5-4FF3-A918-284F0295A0D7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC3638C9-0071-4129-8DBE-DCA4C2FF9673}
+	EndGlobalSection
+EndGlobal
