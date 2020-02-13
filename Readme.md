@@ -1,4 +1,4 @@
-Desafio da Perlink
+# Desafio da Perlink
 
 Inicio dos trabalhos 11/02/2020
 Entrega 13/02/2020
@@ -7,7 +7,7 @@ A solução proposta está estruturada com a separação de camadas entre:
 Web --> Servicos
 Servicos --> Data
 
-Iniciar o banco de dados:
+# Iniciar o banco de dados:
 - carregue a solução no Visual studio 2019 e aguarde até que os componentes sejam carregados
 - na janela do "Package Manager Console" execute o comando "Update-Database"
 para criar a base de dados (não esqueça de configurar a conexão no MySql workbench)
@@ -17,7 +17,7 @@ senha : "sa"
 lembrando que é necessário levantar o sistema pelo menos uma vez para que o Seed pré Cadastre
 alguns dados de exemplo.
 
-Iniciando a solução:
+# Iniciando a solução:
 navegue até a pasta "src\Perlink.Web\bin\Debug\netcoreapp2.2"
 faça o comando : dotnet Perlink.Web.dll
 ou simplesmente utilizar o arquivos batch "build.cmd"
