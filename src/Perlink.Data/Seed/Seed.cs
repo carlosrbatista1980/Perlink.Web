@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using Perlink.Data.Data;
 
 
 namespace Perlink.Data.Seed
@@ -18,45 +19,61 @@ namespace Perlink.Data.Seed
 
         public void SeedData()
         {
-            /*
-
-            if (!_context.Account.Any())
+            if (!_context.Lawoffice.Any())
             {
-                Console.WriteLine("Running Seed...");
+                Console.WriteLine("Seeding Offices ...");
 
-                var AccountSeedData = new[]
-                {
-                    new {id = 1, username = "admin1", password = "123", phone = "21-9998880008", lastlogintime = DateTime.Now,},
-                    new {id = 2, username = "admin2", password = "223", phone = "22-9998880008", lastlogintime = DateTime.Now,},
-                    new {id = 3, username = "admin3", password = "323", phone = "23-9998880008", lastlogintime = DateTime.Now,},
-                    new {id = 4, username = "admin4", password = "423", phone = "24-9998880008", lastlogintime = DateTime.Now,},
-                };
-
-                foreach (var item in AccountSeedData)
-                {
-                    Account account = new Account()
+                var lawoffices = new[]
                     {
-                        Username = item.username,
-                        Password = item.password,
-                        Phone = item.phone,
-                        LastLoginTime = item.lastlogintime,
+                        new {id = 1, name = "escritorio botafogo"},
+                        new {id = 2, name = "escritorio centro"},
+                        new {id = 3, name = "escritorio barra"},
                     };
 
-                    _context.Account.Add(account);
+                foreach (var office in lawoffices)
+                {
+                    var escritorio = new Lawoffice();
+                    
+                    escritorio.Id = office.id;
+                    escritorio.Name = office.name;
+                    escritorio.CreationTime = DateTime.Now;
+
+                    _context.Lawoffice.Add(escritorio);
+                    _context.SaveChanges();
                 }
 
-                try
-                {
-                    _context.SaveChanges(true);
-                    Console.WriteLine("Running Seed...OK");
-                }
-                catch (DbUpdateException ex)
-                {
-                    Console.WriteLine("Running Seed...ERROR: " + ex.Message);
-                }
+                Console.WriteLine("Seeding Offices ...OK");
             }
 
-            */
+
+            if (!_context.Lawsuit.Any())
+            {
+                Console.WriteLine("Seeding LawSuits ...");
+
+                var lawsuits = new[]
+                {
+                    new {id = 1, suitNumber = "001-002", courtCosts = 299m, lawofficeId = 1},
+                    new {id = 2, suitNumber = "002-002", courtCosts = 199m, lawofficeId = 2},
+                    new {id = 3, suitNumber = "003-002", courtCosts = 399m, lawofficeId = 2},
+                    new {id = 4, suitNumber = "004-002", courtCosts = 499m, lawofficeId = 3},
+                };
+
+                foreach (var lawsuit in lawsuits)
+                {
+                    var processo = new Lawsuit();
+
+                    processo.Id = lawsuit.id;
+                    processo.SuitNumber = lawsuit.suitNumber;
+                    processo.CourtCosts = lawsuit.courtCosts;
+                    processo.SuitCreationTime = DateTime.Now;
+                    processo.LawofficeId = lawsuit.lawofficeId;
+
+                    _context.Lawsuit.Add(processo);
+                    _context.SaveChanges();
+                }
+
+                Console.WriteLine("Seeding LawSuits ...OK");
+            }
         }
     }
 }

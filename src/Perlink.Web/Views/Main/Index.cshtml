@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Perlink.Data.Data.Lawsuit>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <span class="text-info">Numero do Processo</span>
+            </th>
+            <th>
+                <span class="text-info">Data de Criação do Processo</span>
+            </th>
+            <th>
+                <span class="text-info">Valor do Processo</span>
+            </th>
+            <th>
+                <span class="text-info">Escritorio Responsável</span>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SuitNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SuitCreationTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourtCosts)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Lawoffice.Name)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

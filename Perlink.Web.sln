@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Perlink.Services", "src\Per
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Perlink.Data", "src\Perlink.Data\Perlink.Data.csproj", "{134BA80B-AD0E-4F41-AD21-E7C44BF8ECB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Perlink.Test", "src\Perlink.Test\Perlink.Test.csproj", "{1F5C7AA3-DD00-414B-979B-E9E6E514A2DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{134BA80B-AD0E-4F41-AD21-E7C44BF8ECB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{134BA80B-AD0E-4F41-AD21-E7C44BF8ECB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{134BA80B-AD0E-4F41-AD21-E7C44BF8ECB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F5C7AA3-DD00-414B-979B-E9E6E514A2DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F5C7AA3-DD00-414B-979B-E9E6E514A2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F5C7AA3-DD00-414B-979B-E9E6E514A2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F5C7AA3-DD00-414B-979B-E9E6E514A2DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +49,7 @@ Global
 		{9DE7978B-1C40-4C46-8071-7809E8F8315C} = {BD21ECBB-E6B5-4FF3-A918-284F0295A0D7}
 		{D6DADD78-9C54-4F43-92BF-991138B163F2} = {BD21ECBB-E6B5-4FF3-A918-284F0295A0D7}
 		{134BA80B-AD0E-4F41-AD21-E7C44BF8ECB9} = {BD21ECBB-E6B5-4FF3-A918-284F0295A0D7}
+		{1F5C7AA3-DD00-414B-979B-E9E6E514A2DC} = {7303AEF4-4237-4234-945B-94217A68F0C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CC3638C9-0071-4129-8DBE-DCA4C2FF9673}
